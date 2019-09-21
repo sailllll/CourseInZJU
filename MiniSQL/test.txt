@@ -1,0 +1,18 @@
+drop table test1;
+create table test1(
+	ID int, name char(25), primary key (ID)
+);
+insert into test1 values(100, 'orz');
+insert into test1 values(100, 'orz');
+insert into test1 values(200, 'orz');
+select * from test1;
+
+drop table test1;
+create table test1(
+	ID int, name char(12) unique, primary key (ID)
+);
+insert into test1 values(100, 'orz');
+insert into test1 values(100, 'orz');
+insert into test1 values(200, 'orz');
+select * from test1;
+
